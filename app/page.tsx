@@ -13,6 +13,13 @@ import {
 
 const puzzles = [
   {
+    href: "/puzzles/thermite",
+    img: "" /* TODO: add preview image */,
+    title: "Thermite",
+    description:
+      "Replica of the Thermite hack that is triggered when disabling lasers inside the Maze Bank on NoPixel 4.0",
+  },
+  {
     href: "/puzzles/roof-running",
     img: roofRunningImg,
     title: "Roof Running",
