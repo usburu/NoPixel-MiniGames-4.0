@@ -9,12 +9,13 @@ import {
   smokecrackImg,
   wordMemoryImg,
   choppingImg,
+  thermiteImg,
 } from "@/public/images/puzzles";
 
 const puzzles = [
   {
     href: "/puzzles/thermite",
-    img: "" /* TODO: add preview image */,
+    img: thermiteImg,
     title: "Thermite",
     description:
       "Replica of the Thermite hack that is triggered when disabling lasers inside the Maze Bank on NoPixel 4.0",
