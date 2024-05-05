@@ -1,41 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  roofRunningImg,
+  laundromatImg,
+  lockpickImg,
+  repairKitImg,
+  smokecrackImg,
+  wordMemoryImg,
+  choppingImg,
+} from "@/public/images/puzzles";
+
 const puzzles = [
   {
     href: "/puzzles/roof-running",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/63980031/7d94e398-ae40-45d2-ae25-d20fa5a62301",
+    img: roofRunningImg,
     title: "Roof Running",
     description: "Replica of the Roof Running hack that is triggered when robbing AC-Units on NoPixel 4.0"
   },
   {
     href: "/puzzles/laundromat",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/63980031/7a0a6e18-a39f-45b8-b186-5d0069241ce0",
+    img: laundromatImg,
     title: "Laundromat",
     description: "Replica of the Laundromat hack that is triggered when robbing the safe inside the south-side Laundromat on NoPixel 4.0"
   },
   {
     href: "/puzzles/lockpick",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/63980031/e5e00eac-ea19-46e1-944c-67c7ff8ca5cf",
+    img: lockpickImg,
     title: "LockPick",
     description: "Replica of the LockPick hack that is triggered when lockpicking vehicles, among other things, on NoPixel 4.0"
   },
   {
     href: "/puzzles/repair-kit",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/63980031/4888fd16-2b24-44c0-9952-275ddb626332",
+    img: repairKitImg,
     title: "RepairKit",
     description: "Replica of the RepairKit hack that is triggered when repairing vehicles on NoPixel 4.0"
   },
   {
     href: "SmokeCrack/SmokeCrack.html",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/63980031/3d2d218e-ec33-4b16-a981-56a16771aa64",
+    img: smokecrackImg,
     title: "SmokeCrack",
     description: "Replica of the SmokeCrack hack that is triggered through the in-game PC when hacking Wi-Fi's on NoPixel 4.0"
   },
+  // This doesn't work.
+  //
+  // {
+  //   href: "/puzzles/word-memory",
+  //   img: wordMemoryImg,
+  //   title: "Word Memory",
+  //   description: ""
+  // },
   {
-    href: "/puzzles/word-memory",
-    img: "https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0/assets/71356958/835f82cb-a5de-43b7-ade0-6bc74285ed00",
-    title: "Word Memory",
+    href: "/puzzles/chopping",
+    img: choppingImg,
+    title: "Chopping",
     description: ""
   }
 ]
@@ -73,7 +91,7 @@ export default function Home() {
                       src={puzzle.img}
                       alt={puzzle.title}
                       width={250}
-                      height={124}
+                      height={140}
                       className="rounded"
                   />
                   <div className="

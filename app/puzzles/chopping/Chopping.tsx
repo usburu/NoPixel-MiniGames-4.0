@@ -9,8 +9,7 @@ import { useKeyDown } from "@/app/utils/useKeyDown";
 import useGame from "@/app/utils/useGame";
 import classNames from "classnames";
 
-
-import "../../../public/Chopping/Chopping.css";
+import '@/app/puzzles/chopping/style.css'
 
 
 const getStatusMessage = (status: number | undefined) => {

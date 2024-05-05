@@ -6,6 +6,8 @@ import useTimeout from "@/app/utils/useTimeout";
 import NPSettings from "@/app/components/NPSettings";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGear} from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image'
+import gamePad from "@/public/images/gamePad.svg";
 
 interface NPHackContainerButton {
     label: string,
@@ -133,7 +135,12 @@ const NPHackContainer: FC<NPHackContainerProps> = ({
                             flex items-center
                             gap-4
                         ">
-                            <embed className="w-8 sm:w-10" src="/gamePad.svg"/>
+                            <Image
+                                src={gamePad}
+                                alt=""
+                                width={40}
+                                className="w-8 sm:w-10"
+                            />
                             <h2 className="
                                 text-lg
                                 sm:text-2xl

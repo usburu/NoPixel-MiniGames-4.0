@@ -1,9 +1,5 @@
-// import "./puzzle.css";
 import Script from "next/script";
-import RepairKit from "@/app/puzzles/repair-kit/RepairKit";
 import Link from "next/link";
-
-// import "./puzzle.css";
 
 export default function PuzzleLayout({
   children,

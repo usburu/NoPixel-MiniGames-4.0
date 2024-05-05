@@ -9,7 +9,7 @@ body {
     font-family: 'Gilroy', sans-serif;
     overflow: hidden;
     position: relative; /* Set position to relative to allow positioning of pseudo-element */
-    background: linear-gradient(rgba(21, 27, 48, 0.97), rgba(21, 27, 48, 0.97)), url(bg.png);
+    background: linear-gradient(rgba(21, 27, 48, 0.97), rgba(21, 27, 48, 0.97)), url(images/bg.png);
     background-size: cover;
 }
 

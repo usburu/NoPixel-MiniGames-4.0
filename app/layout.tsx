@@ -3,8 +3,8 @@ import localFont from 'next/font/local'
 import "./globals.css";
 import Image from 'next/image'
 import background from '../public/images/bg.png'
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { Analytics } from "@vercel/analytics/react";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function Background() {
   return (
@@ -17,7 +17,6 @@ function Background() {
         fill
         sizes="100vw"
         className="opacity-10 object-cover"
-        priority
       />
     </div>
   )
@@ -58,8 +57,8 @@ export default function RootLayout({
       <body className={gilroy.className}>
         <Background />
         {children}
-        <Analytics />
-        <SpeedInsights />
+        {/* <Analytics />
+        <SpeedInsights /> */}
       </body>
     </html>
   );
